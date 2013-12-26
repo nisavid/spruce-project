@@ -56,8 +56,8 @@ import runpy as _runpy
 import sys as _sys
 import traceback as _traceback
 
-import nisavid.introspect as _introspect
-import nisavid.pprint as _pprint
+import spruce.introspect as _introspect
+import spruce.pprint as _pprint
 
 
 def main():
@@ -847,7 +847,7 @@ class _ProjectDocSpec(_DocSpec):
             for descendant in self.top_interesting_descendants:
                 if (descendant.name == self.shortname
                     or descendant.name
-                       == 'nisavid.{}'.format(self.shortname)):
+                       == 'spruce.{}'.format(self.shortname)):
                     # ???: is there a better way to do this
                     #     try/except/log/skip?
                     try:
@@ -900,7 +900,7 @@ class _ProjectDocSpec(_DocSpec):
 
     @property
     def shortname(self):
-        strippable_prefix = 'nisavid-'
+        strippable_prefix = 'spruce-'
         if self.name.startswith(strippable_prefix):
             return self.name[len(strippable_prefix):]
         else:
