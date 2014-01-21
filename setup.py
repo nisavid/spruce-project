@@ -53,7 +53,7 @@ TROVE_CLASSIFIERS = \
 
 SETUP_DEPS = ()
 
-INSTALL_DEPS = ('gitpython', 'spruce-introspect', 'spruce-pprint')
+INSTALL_DEPS = ('spruce-introspect', 'spruce-pprint')
 
 EXTRAS_DEPS = {}
 
