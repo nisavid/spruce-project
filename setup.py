@@ -15,7 +15,7 @@ NAME_NOPREFIX = 'project'
 
 NAME = 'Spruce-' + NAME_NOPREFIX
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 SITE_URI = ''
 
